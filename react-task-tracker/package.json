@@ -36,3 +36,7 @@
     ]
   }
 }
+
+//...
+"homepage":"https://kai-hosoi.github.io/I-want-to-put-node_module-in-here/","script":{"deploy":"npm run build && gh-pages -d build"},
+//...
