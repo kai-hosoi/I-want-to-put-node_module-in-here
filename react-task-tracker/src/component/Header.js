@@ -1,18 +1,16 @@
-import Button from './Button'
-
-const Header = (props) => {
-    const onClick = (e) => {
-        console.log(e)
-    }
-
+import Button from "./Button"
+const Header = ({onAdd,showAddTask }) => {
     return (
-        <header className = "header">
-            <h1 >{props.title}</h1>
-            <Button color = "green" text = "Add" onClick={onClick}/>
+        <header className = 'header'>
+        <h1>Task Tracker</h1>
+        <Button
+        color= {showAddTask ? "red": "green"}
+        onAdd={onAdd}
+        text={showAddTask ? "Close" : "Add"}
+        />
         </header>
+
     )
 }
-
-
 
 export default Header
